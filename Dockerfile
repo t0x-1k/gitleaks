@@ -1,3 +1,4 @@
+
 FROM golang:1.24rc2 AS build
 WORKDIR /go/src/github.com/zricethezav/gitleaks
 COPY . .
