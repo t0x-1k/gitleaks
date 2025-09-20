@@ -1,5 +1,5 @@
 
-FROM golang:1.25rc3 AS build
+FROM golang:1.25.1 AS build
 WORKDIR /go/src/github.com/zricethezav/gitleaks
 COPY . .
 RUN VERSION=$(git describe --tags --abbrev=0) && \
